@@ -174,7 +174,58 @@ section nav .menu .lastlist .soc #btnmusic a #mm{
     .enter {
         background-image: url('Pics/imagereposive.jpg');
       }
+      section header .btnmenu {
+        position: relative;
+        padding:20px;
+        margin-left: 5px;
+        margin-right: -5px;
+      }
+      section nav {
+        position: fixed;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+    section nav .menu .btnx{
+        position: relative;
+     left: 75%;
+    }
+    section nav .menu .btnx i{
+        color: rgb(179, 179, 179);
+    }
+    section nav .menu .navi{
+        padding: 0px 5px 10px 150px;
+        position: relative;
+        flex-direction: column;
+    }
     
+    section nav .menu .navi  li{
+        padding: 20px;
+    }
+    section nav .menu .navi  li a{
+        color: rgba(222, 222, 222, 0.882);
+        font-size: 27px;
+    }
+    section nav .menu .lastlist {
+        padding: 10px 5px 35px 40px;
+       margin-left: 5px;
+    }
+    section nav .menu .lastlist .soc li a i{
+       font-size: 30px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.94);
+        transition: .3s ease-in-out;
+    }
+    section nav .menu .lastlist .soc li a i:hover{
+        color: white;
+        transform: translateY(1.05px);
+    }
+    section nav .menu .lastlist .soc #btnmusic a #mm{
+        opacity: 0.5;
+    }
     .enter .welcome{
         position: absolute;
         z-index: 1;
@@ -182,6 +233,7 @@ section nav .menu .lastlist .soc #btnmusic a #mm{
         height: 50px;
         top: 42%;
         left:20%;
+     
     }
     .enter .welcome p{
         font-size: 50px;
