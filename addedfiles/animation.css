@@ -1,0 +1,26 @@
+@keyframes welcome {
+    from{
+        filter: blur(2px);
+        opacity: 0;
+    }
+    to{
+        backdrop-filter: blur(0px);
+
+        opacity: 1;
+    }
+}
+@keyframes bluring {
+    0%,20%{
+      backdrop-filter: blur(10px);
+    }
+
+}
+@keyframes fadein {
+    from{
+        opacity:0;
+    }
+    to{
+    opacity: 1;
+
+}
+}

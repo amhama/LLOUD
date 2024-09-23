@@ -1,0 +1,201 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* Add this line */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    scroll-behavior: smooth;
+   
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    
+}
+.enter {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Pics/image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+
+section header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: right;
+padding: 30px;
+}
+
+section header .btnmenu {
+    position: relative;
+    padding:20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: opacity .3s ease-in-out;
+    animation: fadein 2s ease-in-out;
+}
+section header .btnmenu  i{
+    font-size: 60px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+section nav {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: auto;
+    height: 100%;
+    right:0%;
+    transform: translateX(500px);
+    transition: transform .5s ease-in-out;
+    transition-delay: .1s;
+    z-index: 2;
+    backdrop-filter:blur(5px)  ;
+}
+section nav .menu .btnx{
+    position: relative;
+    padding: 20px 15px 13px 13px;
+ left: 70%;
+ opacity: 1;
+ cursor: pointer;
+ transition: opacity .2s ease-out;
+}
+section nav .menu .btnx i{
+    color: white;
+    font-size: 55px;
+}
+section nav .menu .navi{
+    padding: 10px 80px 10px 40px;
+    position: relative;
+    flex-direction: column;
+}
+
+section nav .menu .navi  li{
+    padding: 10px;
+}
+section nav .menu .navi .Home a{
+   color: white;
+}
+section nav .menu .navi  li a{
+    color: rgba(222, 222, 222, 0.882);
+    font-weight: 700;
+    font-size: 23px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+section nav .menu .navi  li a:hover{
+    color: white;
+}
+section nav .menu .lastlist{
+        padding-left: 0px;
+    position: relative;
+    list-style-type: none;
+}
+section nav .menu .lastlist .soc{
+    padding: 10px 80px 20px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+section nav .menu .lastlist .soc li{
+    padding: 10px;
+    padding-left: 5px;
+    
+}
+section nav .menu .lastlist .soc li a i{
+   font-size: 25px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.94);
+    transition: .3s ease-in-out;
+}
+section nav .menu .lastlist .soc li a i:hover{
+    color: white;
+    transform: translateY(1.05px);
+}
+section nav .menu .lastlist .soc #btnmusic a #mm{
+    opacity: 0.5;
+}
+
+.enter .welcome{
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    top: 42%;
+    left: 46.5%;
+    animation: welcome 2s forwards ease-in-out;
+    /* Change 1s to the desired delay time */
+    opacity: 0; /* Start hidden */
+
+}
+.enter .welcome p{
+    font-size: 75px;
+    font-weight: 700;
+    text-shadow: -1px -1px 50px rgba(0, 0, 0, 0.368);}
+.enter .welcome p span{
+    font-weight:bolder;
+}
+.enter .lisablur{
+    position: relative;
+    background-color:transparent;
+    height: 100%;
+    width: 50%;
+    animation: bluring  2s ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 860px) {
+    .enter {
+        background-image: url('Pics/imagereposive.jpg');
+      }
+    
+    .enter .welcome{
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        height: 50px;
+        top: 42%;
+        left:20%;
+    }
+    .enter .welcome p{
+        font-size: 50px;
+        color: azure;
+    }
+    .enter .lisablur{
+
+        position: relative;
+        top: 10%;
+        height: 90%;
+        width: 100%;
+        
+    }
+    .enter .welcome p span{
+        padding: 5px;
+    }
+}
